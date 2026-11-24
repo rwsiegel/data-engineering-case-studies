@@ -12,7 +12,7 @@ Both are rebuilt here on **synthetic data** with the same structure as the origi
 | Start here | [exercise-1-certificate-dedup](exercise-1-certificate-dedup/README.md) | [exercise-2-domain-recommendations](exercise-2-domain-recommendations/README.md) |
 
 **For a quick read:** `executive_summary.pdf` in each exercise folder (one page each).
-**To try the knobs:** the [Score Clue Explorer](https://YOUR-USERNAME.github.io/YOUR-REPO/) (see below).
+**To try the knobs:** the [Score Clue Explorer](https://rwsiegel.github.io/data-engineering-case-studies/) (see below).
 
 ## What this shows
 
@@ -28,7 +28,7 @@ Both are rebuilt here on **synthetic data** with the same structure as the origi
 
 1. Push this repository to GitHub.
 2. In the repository, open **Settings, Pages**. Under **Build and deployment**, choose **Deploy from a branch**, branch `main`, folder `/docs`, and save.
-3. After a minute the page is live at `https://YOUR-USERNAME.github.io/YOUR-REPO/`. Replace the two placeholder links in the READMEs with that address.
+3. After a minute the page is live at `https://rwsiegel.github.io/data-engineering-case-studies/`.
 
 ## Layout
 

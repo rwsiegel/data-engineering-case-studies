@@ -11,7 +11,7 @@ login page), with details of the infected machine repeated on every row. There a
 
 ## Try it
 
-**[Score Clue Explorer](https://YOUR-USERNAME.github.io/YOUR-REPO/)** (also in `score_clue_explorer.html`): move four sliders and see the ranking change. See [Publishing the explorer](../README.md#publishing-the-explorer).
+**[Score Clue Explorer](https://rwsiegel.github.io/data-engineering-case-studies/)** (also in `score_clue_explorer.html`): move four sliders and see the ranking change. See [Publishing the explorer](../README.md#publishing-the-explorer).
 
 ## Headline results
 
