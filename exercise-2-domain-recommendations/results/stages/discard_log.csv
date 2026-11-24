@@ -1,0 +1,5 @@
+stage,reason,rows,machines_affected,domains_affected,examples
+2 normalize,"host is an IP address, not a domain",5080,269,622,row 15: 192.0.2.221 | row 19: 203.0.113.242 | row 88: 203.0.113.73
+3a exact duplicate rows,every column identical to an earlier row,10358,448,1420,row 775: prydly.basilrunfoundry.fr | row 838: my.cypressboulevardmarketplace.co.uk | row 1136: id.hillcreekassociates.org
+3b repeat of machine+fqdn+url,same machine logged same login URL again (count carried into the observation),43354,481,9652,row 235: www.instagram.com | row 250: login.live.com | row 258: accounts.google.com
+3c collapse to machine+domain,several fqdns or URLs of one domain on one machine merged,13821,529,4335,"e404155f/turquoisecrystalequity.co: 12 fqdns, 12 urls | dd0bffb8/zoom.us: 2 fqdns, 2 urls | 6c974def/spicesectorcyber.it: 5 fqdns, 5 urls"

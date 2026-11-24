@@ -1,0 +1,28 @@
+unit,stage,reason,count,machines_affected,domains_affected,examples
+credential rows,2 normalize,"host is an IP address, not a domain",5080,269,622,row 15: 192.0.2.221 | row 19: 203.0.113.242 | row 88: 203.0.113.73
+credential rows,3a exact duplicate rows,every column identical to an earlier row,10358,448,1420,row 775: prydly.basilrunfoundry.fr | row 838: my.cypressboulevardmarketplace.co.uk | row 1136: id.hillcreekassociates.org
+credential rows,3b repeat of machine+fqdn+url,same machine logged same login URL again (count carried into the observation),43354,481,9652,row 235: www.instagram.com | row 250: login.live.com | row 258: accounts.google.com
+credential rows,3c collapse to machine+domain,several fqdns or URLs of one domain on one machine merged,13821,529,4335,"e404155f/turquoisecrystalequity.co: 12 fqdns, 12 urls | dd0bffb8/zoom.us: 2 fqdns, 2 urls | 6c974def/spicesectorcyber.it: 5 fqdns, 5 urls"
+domains,5a seed domain,the client already has this domain,1,560,samuraiwarriors.online,samuraiwarriors.online on 560 machines (100%)
+domains,"5b internal or non-public name (set aside, not discarded)","non-public top-level domain, internal naming; set aside for the related-not-owned list",1,61,samuraiwarriors.loc,samuraiwarriors.loc on 61 machines (11%)
+domains,"5b internal or non-public name (set aside, not discarded)","non-public top-level domain, internal naming; set aside for the related-not-owned list",1,42,samuraiwarriors.corp,samuraiwarriors.corp on 42 machines (8%)
+domains,"5b internal or non-public name (set aside, not discarded)","non-public top-level domain, internal naming; set aside for the related-not-owned list",1,46,samuraiwarriors.local,samuraiwarriors.local on 46 machines (8%)
+domains,"5b internal or non-public name (set aside, not discarded)","non-public top-level domain, internal naming; set aside for the related-not-owned list",1,19,booking.samuraiwarriors,booking.samuraiwarriors on 19 machines (3%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 407 of 560 machines; too common to indicate ownership,1,407,facebook.com,facebook.com on 407 machines (73%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 347 of 560 machines; too common to indicate ownership,1,347,live.com,live.com on 347 machines (62%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 310 of 560 machines; too common to indicate ownership,1,310,instagram.com,instagram.com on 310 machines (55%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 420 of 560 machines; too common to indicate ownership,1,420,google.com,google.com on 420 machines (75%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 205 of 560 machines; too common to indicate ownership,1,205,paypal.com,paypal.com on 205 machines (37%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 210 of 560 machines; too common to indicate ownership,1,210,twitter.com,twitter.com on 210 machines (38%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 207 of 560 machines; too common to indicate ownership,1,207,amazon.com,amazon.com on 207 machines (37%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 256 of 560 machines; too common to indicate ownership,1,256,discord.com,discord.com on 256 machines (46%)
+domains,5c widespread domain (seen on >= 35% of machines),seen on 280 of 560 machines; too common to indicate ownership,1,280,netflix.com,netflix.com on 280 machines (50%)
+domains,6a third-party tenants,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it,1,79,okta.com,okta.com on 79 machines
+domains,6a third-party tenants,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it,1,34,myworkdayjobs.com,myworkdayjobs.com on 34 machines
+domains,6a third-party tenants,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it,1,26,icims.com,icims.com on 26 machines
+domains,6a third-party tenants,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it,1,21,taleo.net,taleo.net on 21 machines
+domains,6a third-party tenants,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it,1,18,zendesk.com,zendesk.com on 18 machines
+domains,6a third-party tenants,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it,1,11,service-now.com,service-now.com on 11 machines
+domains,6a third-party tenants,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it,1,9,avature.net,avature.net on 9 machines
+domains,6b gate: seen on >= 10 machines,seen on fewer than 10 machines: too little co-occurrence evidence to rank (name-matching ones are in review_set_aside.csv),32672,,32672,see scored_candidates.csv for the 438 that passed
+domains,7 cutoff,scored below 0.75 and not a review lead,415,,415,scored_candidates.csv lists every one with its score

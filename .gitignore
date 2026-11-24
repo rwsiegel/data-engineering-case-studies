@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+work/
+vectors/
+out/
+exercise-*/data/*.jsonlines
+exercise-*/data/*.csv

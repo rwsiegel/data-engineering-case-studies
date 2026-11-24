@@ -1,0 +1,54 @@
+{
+  "input": "samuraiwarriors_credentials.csv",
+  "raw_rows": 131319,
+  "machines": 560,
+  "observations": 58706,
+  "seed_machines": 560,
+  "funnel": [
+    {
+      "stage": "1 parse",
+      "entering": 131319,
+      "discarded": 0,
+      "kept": 131319
+    },
+    {
+      "stage": "2 normalize",
+      "entering": 131319,
+      "discarded": 5080,
+      "kept": 126239
+    },
+    {
+      "stage": "3a exact duplicate rows",
+      "entering": 126239,
+      "discarded": 10358,
+      "kept": 115881
+    },
+    {
+      "stage": "3b repeat of machine+fqdn+url",
+      "entering": 115881,
+      "discarded": 43354,
+      "kept": 72527
+    },
+    {
+      "stage": "3c collapse to machine+domain",
+      "entering": 72527,
+      "discarded": 13821,
+      "kept": 58706,
+      "note": "rows merged into one observation per machine and registrable domain; counts carried in observations.csv"
+    }
+  ],
+  "flags_kept_not_discarded": {
+    "url host differs from fqdn": 36,
+    "rows flagged internal_name (non-public TLD), kept": 170,
+    "rows repaired: reversed hostname": 36
+  },
+  "checks": {
+    "1 parse: kept + discarded = entering": true,
+    "2 normalize: kept + discarded = entering": true,
+    "3a exact duplicate rows: kept + discarded = entering": true,
+    "3b repeat of machine+fqdn+url: kept + discarded = entering": true,
+    "3c collapse to machine+domain: kept + discarded = entering": true,
+    "discard log rows agree with funnel (stages 1 to 3c)": true,
+    "chain: each stage enters with what the last kept (1 to 3c)": true
+  }
+}

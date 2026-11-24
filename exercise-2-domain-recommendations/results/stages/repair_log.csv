@@ -1,0 +1,3 @@
+original_host,repaired_host,rows,machines,rule
+com.kendohotels,kendohotels.com,11,11,reversed hostname written backwards; reversed back (not a discard)
+online.samuraiwarriors,samuraiwarriors.online,25,25,reversed hostname written backwards; reversed back (not a discard)

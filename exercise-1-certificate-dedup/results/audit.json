@@ -1,0 +1,1748 @@
+{
+  "input": "../synthetic/synthetic_ct_records.jsonlines",
+  "input_is_gzip": false,
+  "output": {
+    "mode": "skipped",
+    "stride": 1,
+    "sets_written": 0,
+    "records_written": 0,
+    "note": "audit only: no duplicate sets written"
+  },
+  "settings": {
+    "fingerprint_path": "data.leaf_cert.fingerprint",
+    "valid_hash_lengths": [
+      40,
+      64
+    ],
+    "prefix_len": 2
+  },
+  "buckets_used": 256,
+  "largest_bucket_rows": 243,
+  "index": {
+    "chunks": 1,
+    "seconds_indexing": 1,
+    "rows_by_update_type": {
+      "PrecertLogEntry": 26485,
+      "X509LogEntry": 23552
+    },
+    "rows_by_log": {
+      "Google 'Argon2019' log": 14018,
+      "Let's Encrypt 'Oak2019' log": 12880,
+      "Google 'Pilot' log": 6138,
+      "Google 'Rocketeer' log": 5959,
+      "Google 'Icarus' log": 4833,
+      "Cloudflare 'Nimbus2019' Log": 1933,
+      "Sectigo 'Mammoth' CT log": 904,
+      "DigiCert Yeti2019 Log": 812,
+      "Google 'Skydiver' log": 772,
+      "Google 'Testtube' log": 666,
+      "Google 'Argon2020' log": 443,
+      "Cloudflare 'Nimbus2020' Log": 238,
+      "Sectigo 'Sabre' CT log": 148,
+      "DigiCert Log Server 2": 112,
+      "Google 'Submariner' log": 33,
+      "Google 'Xenon2020' log": 31,
+      "Cloudflare 'Nimbus2021' Log": 29,
+      "DigiCert Yeti2020 Log": 27,
+      "DigiCert Log Server": 22,
+      "Google 'Argon2021' log": 12,
+      "Google 'Xenon2021' log": 8,
+      "DigiCert Yeti2021 Log": 8,
+      "DigiCert Nessie2020 Log": 6,
+      "Let's Encrypt 'Oak2021' log": 2,
+      "Let's Encrypt 'Oak2020' log": 1,
+      "DigiCert Nessie2021 Log": 1,
+      "Google 'Xenon2019' log": 1
+    }
+  },
+  "stages": {
+    "raw_lines": 50037,
+    "rejected": 0,
+    "staged_with_valid_fingerprint": 50037,
+    "grouped_distinct_fingerprints": 36832,
+    "singletons_removed": 26085,
+    "output_duplicate_sets": 10747,
+    "output_duplicate_records": 23952
+  },
+  "rejects_by_reason": {},
+  "reject_example_line_numbers": {},
+  "set_size_distribution": {
+    "2": 8644,
+    "3": 1790,
+    "4": 281,
+    "5": 26,
+    "6": 3,
+    "7": 2,
+    "8": 1
+  },
+  "set_update_type_combinations": {
+    "X509LogEntry + X509LogEntry": 3809,
+    "PrecertLogEntry + PrecertLogEntry": 4835,
+    "PrecertLogEntry + PrecertLogEntry + PrecertLogEntry": 1782,
+    "PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry": 280,
+    "PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry": 25,
+    "PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry": 2,
+    "X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry": 1,
+    "X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry": 1,
+    "X509LogEntry + X509LogEntry + X509LogEntry": 8,
+    "PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry": 1,
+    "X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry": 1,
+    "PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry + PrecertLogEntry": 1,
+    "X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry + X509LogEntry": 1
+  },
+  "duplicate_rows_by_log": {
+    "Google 'Argon2019' log": 6479,
+    "Let's Encrypt 'Oak2019' log": 6007,
+    "Google 'Icarus' log": 3316,
+    "Google 'Rocketeer' log": 2700,
+    "Google 'Pilot' log": 2669,
+    "Cloudflare 'Nimbus2019' Log": 1100,
+    "Google 'Skydiver' log": 570,
+    "Sectigo 'Mammoth' CT log": 526,
+    "DigiCert Yeti2019 Log": 289,
+    "Cloudflare 'Nimbus2020' Log": 76,
+    "Sectigo 'Sabre' CT log": 76,
+    "Google 'Argon2020' log": 38,
+    "DigiCert Log Server 2": 24,
+    "Google 'Xenon2020' log": 18,
+    "DigiCert Yeti2020 Log": 17,
+    "DigiCert Log Server": 10,
+    "Cloudflare 'Nimbus2021' Log": 10,
+    "Google 'Submariner' log": 8,
+    "DigiCert Yeti2021 Log": 6,
+    "Google 'Argon2021' log": 4,
+    "Google 'Xenon2021' log": 4,
+    "DigiCert Nessie2020 Log": 4,
+    "DigiCert Nessie2021 Log": 1
+  },
+  "top_log_pairs_in_two_member_sets": [
+    [
+      [
+        "Google 'Argon2019' log",
+        "Let's Encrypt 'Oak2019' log"
+      ],
+      3153
+    ],
+    [
+      [
+        "Google 'Pilot' log",
+        "Google 'Rocketeer' log"
+      ],
+      1707
+    ],
+    [
+      [
+        "Google 'Argon2019' log",
+        "Google 'Icarus' log"
+      ],
+      1334
+    ],
+    [
+      [
+        "Google 'Icarus' log",
+        "Let's Encrypt 'Oak2019' log"
+      ],
+      834
+    ],
+    [
+      [
+        "Cloudflare 'Nimbus2019' Log",
+        "Google 'Argon2019' log"
+      ],
+      406
+    ],
+    [
+      [
+        "Cloudflare 'Nimbus2019' Log",
+        "Let's Encrypt 'Oak2019' log"
+      ],
+      248
+    ],
+    [
+      [
+        "Let's Encrypt 'Oak2019' log",
+        "Sectigo 'Mammoth' CT log"
+      ],
+      186
+    ],
+    [
+      [
+        "Google 'Rocketeer' log",
+        "Google 'Skydiver' log"
+      ],
+      148
+    ],
+    [
+      [
+        "Google 'Pilot' log",
+        "Google 'Skydiver' log"
+      ],
+      124
+    ],
+    [
+      [
+        "DigiCert Yeti2019 Log",
+        "Let's Encrypt 'Oak2019' log"
+      ],
+      123
+    ]
+  ],
+  "sets_with_two_members_from_the_same_log": 1,
+  "sets_with_mixed_fingerprint_formats": null,
+  "precert_final_pairs": {
+    "pairs_found": 10099,
+    "fingerprints_in_pairs": 20198,
+    "precert_groups_without_a_final_in_this_file": 7024,
+    "final_groups_without_a_precert_in_this_file": 9610,
+    "serials_with_conflicting_domains_or_validity": 0,
+    "distinct_serials": 26733,
+    "rows_without_a_serial_or_update_type": 0,
+    "definition": "same serial number, domain list, and validity dates, with both a precert and a final cert present, under different fingerprints"
+  },
+  "checks": {
+    "raw == staged + rejected": true,
+    "staged == singletons + output records": true,
+    "output records == sum(set sizes)": true,
+    "index rows == staged": true,
+    "pair rows + no-serial rows == staged": true
+  },
+  "bucket_summary": [
+    {
+      "bucket": "00",
+      "rows": 219,
+      "duplicate_sets": 58,
+      "singletons": 97
+    },
+    {
+      "bucket": "01",
+      "rows": 179,
+      "duplicate_sets": 36,
+      "singletons": 96
+    },
+    {
+      "bucket": "02",
+      "rows": 182,
+      "duplicate_sets": 36,
+      "singletons": 103
+    },
+    {
+      "bucket": "03",
+      "rows": 183,
+      "duplicate_sets": 38,
+      "singletons": 100
+    },
+    {
+      "bucket": "04",
+      "rows": 196,
+      "duplicate_sets": 37,
+      "singletons": 109
+    },
+    {
+      "bucket": "05",
+      "rows": 204,
+      "duplicate_sets": 48,
+      "singletons": 96
+    },
+    {
+      "bucket": "06",
+      "rows": 225,
+      "duplicate_sets": 54,
+      "singletons": 107
+    },
+    {
+      "bucket": "07",
+      "rows": 230,
+      "duplicate_sets": 49,
+      "singletons": 120
+    },
+    {
+      "bucket": "08",
+      "rows": 209,
+      "duplicate_sets": 38,
+      "singletons": 125
+    },
+    {
+      "bucket": "09",
+      "rows": 204,
+      "duplicate_sets": 44,
+      "singletons": 109
+    },
+    {
+      "bucket": "0a",
+      "rows": 231,
+      "duplicate_sets": 53,
+      "singletons": 109
+    },
+    {
+      "bucket": "0b",
+      "rows": 188,
+      "duplicate_sets": 38,
+      "singletons": 102
+    },
+    {
+      "bucket": "0c",
+      "rows": 185,
+      "duplicate_sets": 35,
+      "singletons": 102
+    },
+    {
+      "bucket": "0d",
+      "rows": 199,
+      "duplicate_sets": 36,
+      "singletons": 115
+    },
+    {
+      "bucket": "0e",
+      "rows": 188,
+      "duplicate_sets": 38,
+      "singletons": 103
+    },
+    {
+      "bucket": "0f",
+      "rows": 147,
+      "duplicate_sets": 29,
+      "singletons": 87
+    },
+    {
+      "bucket": "10",
+      "rows": 219,
+      "duplicate_sets": 50,
+      "singletons": 104
+    },
+    {
+      "bucket": "11",
+      "rows": 204,
+      "duplicate_sets": 50,
+      "singletons": 92
+    },
+    {
+      "bucket": "12",
+      "rows": 159,
+      "duplicate_sets": 37,
+      "singletons": 80
+    },
+    {
+      "bucket": "13",
+      "rows": 205,
+      "duplicate_sets": 41,
+      "singletons": 114
+    },
+    {
+      "bucket": "14",
+      "rows": 180,
+      "duplicate_sets": 45,
+      "singletons": 81
+    },
+    {
+      "bucket": "15",
+      "rows": 232,
+      "duplicate_sets": 62,
+      "singletons": 96
+    },
+    {
+      "bucket": "16",
+      "rows": 199,
+      "duplicate_sets": 43,
+      "singletons": 102
+    },
+    {
+      "bucket": "17",
+      "rows": 219,
+      "duplicate_sets": 42,
+      "singletons": 128
+    },
+    {
+      "bucket": "18",
+      "rows": 206,
+      "duplicate_sets": 48,
+      "singletons": 97
+    },
+    {
+      "bucket": "19",
+      "rows": 222,
+      "duplicate_sets": 48,
+      "singletons": 115
+    },
+    {
+      "bucket": "1a",
+      "rows": 193,
+      "duplicate_sets": 41,
+      "singletons": 107
+    },
+    {
+      "bucket": "1b",
+      "rows": 179,
+      "duplicate_sets": 37,
+      "singletons": 97
+    },
+    {
+      "bucket": "1c",
+      "rows": 199,
+      "duplicate_sets": 45,
+      "singletons": 102
+    },
+    {
+      "bucket": "1d",
+      "rows": 198,
+      "duplicate_sets": 33,
+      "singletons": 123
+    },
+    {
+      "bucket": "1e",
+      "rows": 194,
+      "duplicate_sets": 37,
+      "singletons": 117
+    },
+    {
+      "bucket": "1f",
+      "rows": 216,
+      "duplicate_sets": 53,
+      "singletons": 92
+    },
+    {
+      "bucket": "20",
+      "rows": 191,
+      "duplicate_sets": 35,
+      "singletons": 111
+    },
+    {
+      "bucket": "21",
+      "rows": 190,
+      "duplicate_sets": 34,
+      "singletons": 110
+    },
+    {
+      "bucket": "22",
+      "rows": 196,
+      "duplicate_sets": 38,
+      "singletons": 104
+    },
+    {
+      "bucket": "23",
+      "rows": 178,
+      "duplicate_sets": 40,
+      "singletons": 85
+    },
+    {
+      "bucket": "24",
+      "rows": 212,
+      "duplicate_sets": 50,
+      "singletons": 102
+    },
+    {
+      "bucket": "25",
+      "rows": 164,
+      "duplicate_sets": 34,
+      "singletons": 80
+    },
+    {
+      "bucket": "26",
+      "rows": 205,
+      "duplicate_sets": 37,
+      "singletons": 121
+    },
+    {
+      "bucket": "27",
+      "rows": 215,
+      "duplicate_sets": 59,
+      "singletons": 90
+    },
+    {
+      "bucket": "28",
+      "rows": 191,
+      "duplicate_sets": 41,
+      "singletons": 94
+    },
+    {
+      "bucket": "29",
+      "rows": 160,
+      "duplicate_sets": 36,
+      "singletons": 84
+    },
+    {
+      "bucket": "2a",
+      "rows": 204,
+      "duplicate_sets": 51,
+      "singletons": 93
+    },
+    {
+      "bucket": "2b",
+      "rows": 174,
+      "duplicate_sets": 29,
+      "singletons": 111
+    },
+    {
+      "bucket": "2c",
+      "rows": 204,
+      "duplicate_sets": 41,
+      "singletons": 110
+    },
+    {
+      "bucket": "2d",
+      "rows": 194,
+      "duplicate_sets": 43,
+      "singletons": 100
+    },
+    {
+      "bucket": "2e",
+      "rows": 216,
+      "duplicate_sets": 49,
+      "singletons": 105
+    },
+    {
+      "bucket": "2f",
+      "rows": 218,
+      "duplicate_sets": 50,
+      "singletons": 107
+    },
+    {
+      "bucket": "30",
+      "rows": 182,
+      "duplicate_sets": 37,
+      "singletons": 95
+    },
+    {
+      "bucket": "31",
+      "rows": 190,
+      "duplicate_sets": 40,
+      "singletons": 103
+    },
+    {
+      "bucket": "32",
+      "rows": 215,
+      "duplicate_sets": 44,
+      "singletons": 110
+    },
+    {
+      "bucket": "33",
+      "rows": 200,
+      "duplicate_sets": 47,
+      "singletons": 95
+    },
+    {
+      "bucket": "34",
+      "rows": 208,
+      "duplicate_sets": 40,
+      "singletons": 119
+    },
+    {
+      "bucket": "35",
+      "rows": 183,
+      "duplicate_sets": 41,
+      "singletons": 92
+    },
+    {
+      "bucket": "36",
+      "rows": 163,
+      "duplicate_sets": 33,
+      "singletons": 92
+    },
+    {
+      "bucket": "37",
+      "rows": 179,
+      "duplicate_sets": 39,
+      "singletons": 90
+    },
+    {
+      "bucket": "38",
+      "rows": 204,
+      "duplicate_sets": 43,
+      "singletons": 105
+    },
+    {
+      "bucket": "39",
+      "rows": 180,
+      "duplicate_sets": 35,
+      "singletons": 98
+    },
+    {
+      "bucket": "3a",
+      "rows": 205,
+      "duplicate_sets": 39,
+      "singletons": 116
+    },
+    {
+      "bucket": "3b",
+      "rows": 178,
+      "duplicate_sets": 42,
+      "singletons": 88
+    },
+    {
+      "bucket": "3c",
+      "rows": 183,
+      "duplicate_sets": 39,
+      "singletons": 95
+    },
+    {
+      "bucket": "3d",
+      "rows": 196,
+      "duplicate_sets": 38,
+      "singletons": 111
+    },
+    {
+      "bucket": "3e",
+      "rows": 215,
+      "duplicate_sets": 47,
+      "singletons": 114
+    },
+    {
+      "bucket": "3f",
+      "rows": 190,
+      "duplicate_sets": 40,
+      "singletons": 100
+    },
+    {
+      "bucket": "40",
+      "rows": 202,
+      "duplicate_sets": 45,
+      "singletons": 101
+    },
+    {
+      "bucket": "41",
+      "rows": 160,
+      "duplicate_sets": 31,
+      "singletons": 90
+    },
+    {
+      "bucket": "42",
+      "rows": 197,
+      "duplicate_sets": 39,
+      "singletons": 102
+    },
+    {
+      "bucket": "43",
+      "rows": 201,
+      "duplicate_sets": 43,
+      "singletons": 101
+    },
+    {
+      "bucket": "44",
+      "rows": 206,
+      "duplicate_sets": 41,
+      "singletons": 116
+    },
+    {
+      "bucket": "45",
+      "rows": 190,
+      "duplicate_sets": 48,
+      "singletons": 81
+    },
+    {
+      "bucket": "46",
+      "rows": 190,
+      "duplicate_sets": 34,
+      "singletons": 113
+    },
+    {
+      "bucket": "47",
+      "rows": 185,
+      "duplicate_sets": 38,
+      "singletons": 102
+    },
+    {
+      "bucket": "48",
+      "rows": 187,
+      "duplicate_sets": 38,
+      "singletons": 101
+    },
+    {
+      "bucket": "49",
+      "rows": 203,
+      "duplicate_sets": 47,
+      "singletons": 97
+    },
+    {
+      "bucket": "4a",
+      "rows": 182,
+      "duplicate_sets": 37,
+      "singletons": 98
+    },
+    {
+      "bucket": "4b",
+      "rows": 212,
+      "duplicate_sets": 44,
+      "singletons": 116
+    },
+    {
+      "bucket": "4c",
+      "rows": 182,
+      "duplicate_sets": 35,
+      "singletons": 101
+    },
+    {
+      "bucket": "4d",
+      "rows": 216,
+      "duplicate_sets": 47,
+      "singletons": 112
+    },
+    {
+      "bucket": "4e",
+      "rows": 188,
+      "duplicate_sets": 44,
+      "singletons": 89
+    },
+    {
+      "bucket": "4f",
+      "rows": 194,
+      "duplicate_sets": 35,
+      "singletons": 118
+    },
+    {
+      "bucket": "50",
+      "rows": 214,
+      "duplicate_sets": 47,
+      "singletons": 109
+    },
+    {
+      "bucket": "51",
+      "rows": 141,
+      "duplicate_sets": 28,
+      "singletons": 77
+    },
+    {
+      "bucket": "52",
+      "rows": 206,
+      "duplicate_sets": 49,
+      "singletons": 99
+    },
+    {
+      "bucket": "53",
+      "rows": 217,
+      "duplicate_sets": 49,
+      "singletons": 107
+    },
+    {
+      "bucket": "54",
+      "rows": 197,
+      "duplicate_sets": 45,
+      "singletons": 94
+    },
+    {
+      "bucket": "55",
+      "rows": 186,
+      "duplicate_sets": 43,
+      "singletons": 90
+    },
+    {
+      "bucket": "56",
+      "rows": 208,
+      "duplicate_sets": 40,
+      "singletons": 115
+    },
+    {
+      "bucket": "57",
+      "rows": 227,
+      "duplicate_sets": 53,
+      "singletons": 105
+    },
+    {
+      "bucket": "58",
+      "rows": 189,
+      "duplicate_sets": 34,
+      "singletons": 111
+    },
+    {
+      "bucket": "59",
+      "rows": 192,
+      "duplicate_sets": 35,
+      "singletons": 108
+    },
+    {
+      "bucket": "5a",
+      "rows": 168,
+      "duplicate_sets": 37,
+      "singletons": 83
+    },
+    {
+      "bucket": "5b",
+      "rows": 191,
+      "duplicate_sets": 34,
+      "singletons": 110
+    },
+    {
+      "bucket": "5c",
+      "rows": 187,
+      "duplicate_sets": 37,
+      "singletons": 106
+    },
+    {
+      "bucket": "5d",
+      "rows": 226,
+      "duplicate_sets": 55,
+      "singletons": 104
+    },
+    {
+      "bucket": "5e",
+      "rows": 212,
+      "duplicate_sets": 46,
+      "singletons": 106
+    },
+    {
+      "bucket": "5f",
+      "rows": 222,
+      "duplicate_sets": 48,
+      "singletons": 110
+    },
+    {
+      "bucket": "60",
+      "rows": 229,
+      "duplicate_sets": 51,
+      "singletons": 113
+    },
+    {
+      "bucket": "61",
+      "rows": 163,
+      "duplicate_sets": 33,
+      "singletons": 91
+    },
+    {
+      "bucket": "62",
+      "rows": 199,
+      "duplicate_sets": 41,
+      "singletons": 109
+    },
+    {
+      "bucket": "63",
+      "rows": 181,
+      "duplicate_sets": 36,
+      "singletons": 105
+    },
+    {
+      "bucket": "64",
+      "rows": 189,
+      "duplicate_sets": 40,
+      "singletons": 94
+    },
+    {
+      "bucket": "65",
+      "rows": 184,
+      "duplicate_sets": 37,
+      "singletons": 102
+    },
+    {
+      "bucket": "66",
+      "rows": 202,
+      "duplicate_sets": 42,
+      "singletons": 108
+    },
+    {
+      "bucket": "67",
+      "rows": 178,
+      "duplicate_sets": 46,
+      "singletons": 78
+    },
+    {
+      "bucket": "68",
+      "rows": 218,
+      "duplicate_sets": 46,
+      "singletons": 114
+    },
+    {
+      "bucket": "69",
+      "rows": 229,
+      "duplicate_sets": 43,
+      "singletons": 128
+    },
+    {
+      "bucket": "6a",
+      "rows": 204,
+      "duplicate_sets": 40,
+      "singletons": 114
+    },
+    {
+      "bucket": "6b",
+      "rows": 219,
+      "duplicate_sets": 48,
+      "singletons": 114
+    },
+    {
+      "bucket": "6c",
+      "rows": 186,
+      "duplicate_sets": 46,
+      "singletons": 82
+    },
+    {
+      "bucket": "6d",
+      "rows": 197,
+      "duplicate_sets": 51,
+      "singletons": 88
+    },
+    {
+      "bucket": "6e",
+      "rows": 184,
+      "duplicate_sets": 37,
+      "singletons": 98
+    },
+    {
+      "bucket": "6f",
+      "rows": 202,
+      "duplicate_sets": 41,
+      "singletons": 114
+    },
+    {
+      "bucket": "70",
+      "rows": 174,
+      "duplicate_sets": 31,
+      "singletons": 103
+    },
+    {
+      "bucket": "71",
+      "rows": 180,
+      "duplicate_sets": 39,
+      "singletons": 92
+    },
+    {
+      "bucket": "72",
+      "rows": 202,
+      "duplicate_sets": 42,
+      "singletons": 109
+    },
+    {
+      "bucket": "73",
+      "rows": 188,
+      "duplicate_sets": 41,
+      "singletons": 95
+    },
+    {
+      "bucket": "74",
+      "rows": 175,
+      "duplicate_sets": 32,
+      "singletons": 100
+    },
+    {
+      "bucket": "75",
+      "rows": 169,
+      "duplicate_sets": 34,
+      "singletons": 92
+    },
+    {
+      "bucket": "76",
+      "rows": 231,
+      "duplicate_sets": 49,
+      "singletons": 120
+    },
+    {
+      "bucket": "77",
+      "rows": 183,
+      "duplicate_sets": 33,
+      "singletons": 111
+    },
+    {
+      "bucket": "78",
+      "rows": 195,
+      "duplicate_sets": 40,
+      "singletons": 105
+    },
+    {
+      "bucket": "79",
+      "rows": 224,
+      "duplicate_sets": 50,
+      "singletons": 110
+    },
+    {
+      "bucket": "7a",
+      "rows": 194,
+      "duplicate_sets": 47,
+      "singletons": 92
+    },
+    {
+      "bucket": "7b",
+      "rows": 188,
+      "duplicate_sets": 43,
+      "singletons": 92
+    },
+    {
+      "bucket": "7c",
+      "rows": 182,
+      "duplicate_sets": 33,
+      "singletons": 112
+    },
+    {
+      "bucket": "7d",
+      "rows": 167,
+      "duplicate_sets": 36,
+      "singletons": 83
+    },
+    {
+      "bucket": "7e",
+      "rows": 208,
+      "duplicate_sets": 50,
+      "singletons": 98
+    },
+    {
+      "bucket": "7f",
+      "rows": 157,
+      "duplicate_sets": 28,
+      "singletons": 96
+    },
+    {
+      "bucket": "80",
+      "rows": 209,
+      "duplicate_sets": 47,
+      "singletons": 105
+    },
+    {
+      "bucket": "81",
+      "rows": 176,
+      "duplicate_sets": 35,
+      "singletons": 101
+    },
+    {
+      "bucket": "82",
+      "rows": 196,
+      "duplicate_sets": 49,
+      "singletons": 91
+    },
+    {
+      "bucket": "83",
+      "rows": 157,
+      "duplicate_sets": 41,
+      "singletons": 72
+    },
+    {
+      "bucket": "84",
+      "rows": 187,
+      "duplicate_sets": 49,
+      "singletons": 76
+    },
+    {
+      "bucket": "85",
+      "rows": 213,
+      "duplicate_sets": 47,
+      "singletons": 114
+    },
+    {
+      "bucket": "86",
+      "rows": 173,
+      "duplicate_sets": 38,
+      "singletons": 88
+    },
+    {
+      "bucket": "87",
+      "rows": 208,
+      "duplicate_sets": 48,
+      "singletons": 103
+    },
+    {
+      "bucket": "88",
+      "rows": 220,
+      "duplicate_sets": 48,
+      "singletons": 113
+    },
+    {
+      "bucket": "89",
+      "rows": 197,
+      "duplicate_sets": 51,
+      "singletons": 80
+    },
+    {
+      "bucket": "8a",
+      "rows": 219,
+      "duplicate_sets": 47,
+      "singletons": 117
+    },
+    {
+      "bucket": "8b",
+      "rows": 194,
+      "duplicate_sets": 39,
+      "singletons": 105
+    },
+    {
+      "bucket": "8c",
+      "rows": 210,
+      "duplicate_sets": 51,
+      "singletons": 105
+    },
+    {
+      "bucket": "8d",
+      "rows": 229,
+      "duplicate_sets": 51,
+      "singletons": 114
+    },
+    {
+      "bucket": "8e",
+      "rows": 219,
+      "duplicate_sets": 48,
+      "singletons": 114
+    },
+    {
+      "bucket": "8f",
+      "rows": 167,
+      "duplicate_sets": 28,
+      "singletons": 104
+    },
+    {
+      "bucket": "90",
+      "rows": 208,
+      "duplicate_sets": 38,
+      "singletons": 124
+    },
+    {
+      "bucket": "91",
+      "rows": 171,
+      "duplicate_sets": 38,
+      "singletons": 91
+    },
+    {
+      "bucket": "92",
+      "rows": 189,
+      "duplicate_sets": 42,
+      "singletons": 95
+    },
+    {
+      "bucket": "93",
+      "rows": 155,
+      "duplicate_sets": 34,
+      "singletons": 83
+    },
+    {
+      "bucket": "94",
+      "rows": 178,
+      "duplicate_sets": 42,
+      "singletons": 83
+    },
+    {
+      "bucket": "95",
+      "rows": 186,
+      "duplicate_sets": 33,
+      "singletons": 112
+    },
+    {
+      "bucket": "96",
+      "rows": 182,
+      "duplicate_sets": 39,
+      "singletons": 96
+    },
+    {
+      "bucket": "97",
+      "rows": 213,
+      "duplicate_sets": 44,
+      "singletons": 110
+    },
+    {
+      "bucket": "98",
+      "rows": 234,
+      "duplicate_sets": 56,
+      "singletons": 111
+    },
+    {
+      "bucket": "99",
+      "rows": 196,
+      "duplicate_sets": 43,
+      "singletons": 102
+    },
+    {
+      "bucket": "9a",
+      "rows": 195,
+      "duplicate_sets": 44,
+      "singletons": 99
+    },
+    {
+      "bucket": "9b",
+      "rows": 155,
+      "duplicate_sets": 30,
+      "singletons": 87
+    },
+    {
+      "bucket": "9c",
+      "rows": 142,
+      "duplicate_sets": 28,
+      "singletons": 83
+    },
+    {
+      "bucket": "9d",
+      "rows": 185,
+      "duplicate_sets": 38,
+      "singletons": 103
+    },
+    {
+      "bucket": "9e",
+      "rows": 207,
+      "duplicate_sets": 42,
+      "singletons": 114
+    },
+    {
+      "bucket": "9f",
+      "rows": 192,
+      "duplicate_sets": 42,
+      "singletons": 102
+    },
+    {
+      "bucket": "a0",
+      "rows": 197,
+      "duplicate_sets": 44,
+      "singletons": 99
+    },
+    {
+      "bucket": "a1",
+      "rows": 172,
+      "duplicate_sets": 35,
+      "singletons": 96
+    },
+    {
+      "bucket": "a2",
+      "rows": 182,
+      "duplicate_sets": 43,
+      "singletons": 88
+    },
+    {
+      "bucket": "a3",
+      "rows": 211,
+      "duplicate_sets": 47,
+      "singletons": 105
+    },
+    {
+      "bucket": "a4",
+      "rows": 208,
+      "duplicate_sets": 43,
+      "singletons": 113
+    },
+    {
+      "bucket": "a5",
+      "rows": 216,
+      "duplicate_sets": 48,
+      "singletons": 113
+    },
+    {
+      "bucket": "a6",
+      "rows": 155,
+      "duplicate_sets": 32,
+      "singletons": 87
+    },
+    {
+      "bucket": "a7",
+      "rows": 181,
+      "duplicate_sets": 42,
+      "singletons": 93
+    },
+    {
+      "bucket": "a8",
+      "rows": 167,
+      "duplicate_sets": 34,
+      "singletons": 89
+    },
+    {
+      "bucket": "a9",
+      "rows": 205,
+      "duplicate_sets": 52,
+      "singletons": 92
+    },
+    {
+      "bucket": "aa",
+      "rows": 213,
+      "duplicate_sets": 47,
+      "singletons": 107
+    },
+    {
+      "bucket": "ab",
+      "rows": 185,
+      "duplicate_sets": 35,
+      "singletons": 109
+    },
+    {
+      "bucket": "ac",
+      "rows": 179,
+      "duplicate_sets": 42,
+      "singletons": 85
+    },
+    {
+      "bucket": "ad",
+      "rows": 207,
+      "duplicate_sets": 41,
+      "singletons": 118
+    },
+    {
+      "bucket": "ae",
+      "rows": 212,
+      "duplicate_sets": 47,
+      "singletons": 105
+    },
+    {
+      "bucket": "af",
+      "rows": 179,
+      "duplicate_sets": 33,
+      "singletons": 106
+    },
+    {
+      "bucket": "b0",
+      "rows": 187,
+      "duplicate_sets": 39,
+      "singletons": 102
+    },
+    {
+      "bucket": "b1",
+      "rows": 185,
+      "duplicate_sets": 39,
+      "singletons": 102
+    },
+    {
+      "bucket": "b2",
+      "rows": 196,
+      "duplicate_sets": 40,
+      "singletons": 105
+    },
+    {
+      "bucket": "b3",
+      "rows": 201,
+      "duplicate_sets": 43,
+      "singletons": 102
+    },
+    {
+      "bucket": "b4",
+      "rows": 204,
+      "duplicate_sets": 43,
+      "singletons": 105
+    },
+    {
+      "bucket": "b5",
+      "rows": 198,
+      "duplicate_sets": 45,
+      "singletons": 97
+    },
+    {
+      "bucket": "b6",
+      "rows": 205,
+      "duplicate_sets": 46,
+      "singletons": 100
+    },
+    {
+      "bucket": "b7",
+      "rows": 209,
+      "duplicate_sets": 50,
+      "singletons": 97
+    },
+    {
+      "bucket": "b8",
+      "rows": 161,
+      "duplicate_sets": 35,
+      "singletons": 81
+    },
+    {
+      "bucket": "b9",
+      "rows": 209,
+      "duplicate_sets": 46,
+      "singletons": 104
+    },
+    {
+      "bucket": "ba",
+      "rows": 203,
+      "duplicate_sets": 51,
+      "singletons": 86
+    },
+    {
+      "bucket": "bb",
+      "rows": 205,
+      "duplicate_sets": 51,
+      "singletons": 91
+    },
+    {
+      "bucket": "bc",
+      "rows": 147,
+      "duplicate_sets": 35,
+      "singletons": 72
+    },
+    {
+      "bucket": "bd",
+      "rows": 160,
+      "duplicate_sets": 38,
+      "singletons": 73
+    },
+    {
+      "bucket": "be",
+      "rows": 202,
+      "duplicate_sets": 45,
+      "singletons": 100
+    },
+    {
+      "bucket": "bf",
+      "rows": 213,
+      "duplicate_sets": 44,
+      "singletons": 113
+    },
+    {
+      "bucket": "c0",
+      "rows": 207,
+      "duplicate_sets": 50,
+      "singletons": 96
+    },
+    {
+      "bucket": "c1",
+      "rows": 242,
+      "duplicate_sets": 52,
+      "singletons": 123
+    },
+    {
+      "bucket": "c2",
+      "rows": 185,
+      "duplicate_sets": 32,
+      "singletons": 114
+    },
+    {
+      "bucket": "c3",
+      "rows": 166,
+      "duplicate_sets": 33,
+      "singletons": 97
+    },
+    {
+      "bucket": "c4",
+      "rows": 208,
+      "duplicate_sets": 47,
+      "singletons": 102
+    },
+    {
+      "bucket": "c5",
+      "rows": 185,
+      "duplicate_sets": 39,
+      "singletons": 97
+    },
+    {
+      "bucket": "c6",
+      "rows": 198,
+      "duplicate_sets": 47,
+      "singletons": 95
+    },
+    {
+      "bucket": "c7",
+      "rows": 203,
+      "duplicate_sets": 45,
+      "singletons": 106
+    },
+    {
+      "bucket": "c8",
+      "rows": 174,
+      "duplicate_sets": 34,
+      "singletons": 99
+    },
+    {
+      "bucket": "c9",
+      "rows": 212,
+      "duplicate_sets": 47,
+      "singletons": 108
+    },
+    {
+      "bucket": "ca",
+      "rows": 194,
+      "duplicate_sets": 38,
+      "singletons": 114
+    },
+    {
+      "bucket": "cb",
+      "rows": 215,
+      "duplicate_sets": 48,
+      "singletons": 102
+    },
+    {
+      "bucket": "cc",
+      "rows": 222,
+      "duplicate_sets": 51,
+      "singletons": 112
+    },
+    {
+      "bucket": "cd",
+      "rows": 183,
+      "duplicate_sets": 40,
+      "singletons": 96
+    },
+    {
+      "bucket": "ce",
+      "rows": 189,
+      "duplicate_sets": 42,
+      "singletons": 94
+    },
+    {
+      "bucket": "cf",
+      "rows": 209,
+      "duplicate_sets": 47,
+      "singletons": 107
+    },
+    {
+      "bucket": "d0",
+      "rows": 203,
+      "duplicate_sets": 39,
+      "singletons": 114
+    },
+    {
+      "bucket": "d1",
+      "rows": 190,
+      "duplicate_sets": 43,
+      "singletons": 90
+    },
+    {
+      "bucket": "d2",
+      "rows": 175,
+      "duplicate_sets": 37,
+      "singletons": 93
+    },
+    {
+      "bucket": "d3",
+      "rows": 180,
+      "duplicate_sets": 41,
+      "singletons": 88
+    },
+    {
+      "bucket": "d4",
+      "rows": 197,
+      "duplicate_sets": 34,
+      "singletons": 126
+    },
+    {
+      "bucket": "d5",
+      "rows": 208,
+      "duplicate_sets": 41,
+      "singletons": 110
+    },
+    {
+      "bucket": "d6",
+      "rows": 186,
+      "duplicate_sets": 34,
+      "singletons": 113
+    },
+    {
+      "bucket": "d7",
+      "rows": 202,
+      "duplicate_sets": 41,
+      "singletons": 112
+    },
+    {
+      "bucket": "d8",
+      "rows": 243,
+      "duplicate_sets": 52,
+      "singletons": 131
+    },
+    {
+      "bucket": "d9",
+      "rows": 185,
+      "duplicate_sets": 35,
+      "singletons": 108
+    },
+    {
+      "bucket": "da",
+      "rows": 211,
+      "duplicate_sets": 49,
+      "singletons": 104
+    },
+    {
+      "bucket": "db",
+      "rows": 202,
+      "duplicate_sets": 47,
+      "singletons": 100
+    },
+    {
+      "bucket": "dc",
+      "rows": 198,
+      "duplicate_sets": 43,
+      "singletons": 106
+    },
+    {
+      "bucket": "dd",
+      "rows": 215,
+      "duplicate_sets": 40,
+      "singletons": 121
+    },
+    {
+      "bucket": "de",
+      "rows": 182,
+      "duplicate_sets": 41,
+      "singletons": 93
+    },
+    {
+      "bucket": "df",
+      "rows": 203,
+      "duplicate_sets": 44,
+      "singletons": 98
+    },
+    {
+      "bucket": "e0",
+      "rows": 192,
+      "duplicate_sets": 32,
+      "singletons": 122
+    },
+    {
+      "bucket": "e1",
+      "rows": 174,
+      "duplicate_sets": 36,
+      "singletons": 88
+    },
+    {
+      "bucket": "e2",
+      "rows": 178,
+      "duplicate_sets": 36,
+      "singletons": 101
+    },
+    {
+      "bucket": "e3",
+      "rows": 195,
+      "duplicate_sets": 42,
+      "singletons": 99
+    },
+    {
+      "bucket": "e4",
+      "rows": 177,
+      "duplicate_sets": 45,
+      "singletons": 82
+    },
+    {
+      "bucket": "e5",
+      "rows": 193,
+      "duplicate_sets": 41,
+      "singletons": 102
+    },
+    {
+      "bucket": "e6",
+      "rows": 195,
+      "duplicate_sets": 43,
+      "singletons": 98
+    },
+    {
+      "bucket": "e7",
+      "rows": 239,
+      "duplicate_sets": 55,
+      "singletons": 111
+    },
+    {
+      "bucket": "e8",
+      "rows": 200,
+      "duplicate_sets": 43,
+      "singletons": 101
+    },
+    {
+      "bucket": "e9",
+      "rows": 210,
+      "duplicate_sets": 36,
+      "singletons": 125
+    },
+    {
+      "bucket": "ea",
+      "rows": 196,
+      "duplicate_sets": 43,
+      "singletons": 104
+    },
+    {
+      "bucket": "eb",
+      "rows": 187,
+      "duplicate_sets": 35,
+      "singletons": 106
+    },
+    {
+      "bucket": "ec",
+      "rows": 214,
+      "duplicate_sets": 51,
+      "singletons": 99
+    },
+    {
+      "bucket": "ed",
+      "rows": 193,
+      "duplicate_sets": 47,
+      "singletons": 91
+    },
+    {
+      "bucket": "ee",
+      "rows": 184,
+      "duplicate_sets": 39,
+      "singletons": 99
+    },
+    {
+      "bucket": "ef",
+      "rows": 219,
+      "duplicate_sets": 42,
+      "singletons": 125
+    },
+    {
+      "bucket": "f0",
+      "rows": 207,
+      "duplicate_sets": 40,
+      "singletons": 117
+    },
+    {
+      "bucket": "f1",
+      "rows": 196,
+      "duplicate_sets": 40,
+      "singletons": 104
+    },
+    {
+      "bucket": "f2",
+      "rows": 202,
+      "duplicate_sets": 47,
+      "singletons": 99
+    },
+    {
+      "bucket": "f3",
+      "rows": 165,
+      "duplicate_sets": 31,
+      "singletons": 98
+    },
+    {
+      "bucket": "f4",
+      "rows": 193,
+      "duplicate_sets": 47,
+      "singletons": 92
+    },
+    {
+      "bucket": "f5",
+      "rows": 180,
+      "duplicate_sets": 43,
+      "singletons": 88
+    },
+    {
+      "bucket": "f6",
+      "rows": 211,
+      "duplicate_sets": 47,
+      "singletons": 110
+    },
+    {
+      "bucket": "f7",
+      "rows": 217,
+      "duplicate_sets": 48,
+      "singletons": 115
+    },
+    {
+      "bucket": "f8",
+      "rows": 210,
+      "duplicate_sets": 42,
+      "singletons": 119
+    },
+    {
+      "bucket": "f9",
+      "rows": 182,
+      "duplicate_sets": 41,
+      "singletons": 93
+    },
+    {
+      "bucket": "fa",
+      "rows": 205,
+      "duplicate_sets": 50,
+      "singletons": 95
+    },
+    {
+      "bucket": "fb",
+      "rows": 190,
+      "duplicate_sets": 44,
+      "singletons": 97
+    },
+    {
+      "bucket": "fc",
+      "rows": 219,
+      "duplicate_sets": 49,
+      "singletons": 115
+    },
+    {
+      "bucket": "fd",
+      "rows": 194,
+      "duplicate_sets": 37,
+      "singletons": 109
+    },
+    {
+      "bucket": "fe",
+      "rows": 193,
+      "duplicate_sets": 47,
+      "singletons": 90
+    },
+    {
+      "bucket": "ff",
+      "rows": 204,
+      "duplicate_sets": 48,
+      "singletons": 99
+    }
+  ],
+  "seconds_this_invocation": 1
+}

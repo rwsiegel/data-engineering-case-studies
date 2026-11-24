@@ -1,0 +1,39 @@
+{
+  "machines": 560,
+  "public_share": 0.35,
+  "cutoff_machines": 196.0,
+  "funnel": [
+    {
+      "stage": "4 candidate generation (every domain seen on a seed machine)",
+      "entering": 33131,
+      "removed": 0,
+      "kept": 33131
+    },
+    {
+      "stage": "5a seed domain",
+      "entering": 33131,
+      "removed": 1,
+      "kept": 33130
+    },
+    {
+      "stage": "5b internal or non-public name (set aside, not discarded)",
+      "entering": 33130,
+      "removed": 4,
+      "kept": 33126
+    },
+    {
+      "stage": "5c widespread domain (seen on >= 35% of machines)",
+      "entering": 33126,
+      "removed": 9,
+      "kept": 33117
+    }
+  ],
+  "checks": {
+    "4 candidate generation (every domain seen on a seed machine): kept + removed = entering": true,
+    "5a seed domain: kept + removed = entering": true,
+    "5b internal or non-public name (set aside, not discarded): kept + removed = entering": true,
+    "5c widespread domain (seen on >= 35% of machines): kept + removed = entering": true,
+    "each stage enters with what the last kept": true,
+    "filter log rows = total removed": true
+  }
+}

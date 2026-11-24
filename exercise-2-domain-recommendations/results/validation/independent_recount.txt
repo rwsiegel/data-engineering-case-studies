@@ -1,0 +1,27 @@
+{
+  "raw_rows": 131319,
+  "after_parse": 131319,
+  "after_normalize": 126239,
+  "reversed_rows_repaired": 36,
+  "exact_duplicate_rows": 10358,
+  "after_exact_dups": 115881,
+  "repeat_machine_fqdn_url": 43354,
+  "after_repeats": 72527,
+  "observations": 58706,
+  "machines": 560,
+  "widespread_domains_at_35pct": 10,
+  "checks": {
+    "raw rows match": true,
+    "rows after normalize match": true,
+    "exact duplicates match": true,
+    "repeat rows match": true,
+    "observations match": true,
+    "machines match": true,
+    "per-domain machine counts match for every domain": true,
+    "per-domain credential rows match for every domain": true,
+    "machines and logins per machine match the raw file for all recommended domains": true,
+    "widespread-domain count matches the filter stage (seed excluded)": true
+  },
+  "recommended_mismatches": []
+}
+ALL PASS

@@ -1,0 +1,47 @@
+[
+  {
+    "cluster": -1,
+    "domains": 738,
+    "recommended_in_cluster": 21,
+    "median_machines": 11.0,
+    "median_logins_per_machine": 1.85,
+    "examples": [
+      "kendohotels.com",
+      "spotify.com",
+      "twitch.tv",
+      "roblox.com",
+      "steampowered.com",
+      "apple.com"
+    ]
+  },
+  {
+    "cluster": 0,
+    "domains": 449,
+    "recommended_in_cluster": 0,
+    "median_machines": 6.0,
+    "median_logins_per_machine": 1.4,
+    "examples": [
+      "sharkcrystal-power.ru",
+      "pheasantboulevardmarketplace.it",
+      "pythonpatioestates.nl",
+      "hillcrystal-fidelity.com",
+      "turquoisecampusassociates.kr",
+      "hillsandstonecircle.store"
+    ]
+  },
+  {
+    "cluster": 1,
+    "domains": 21,
+    "recommended_in_cluster": 0,
+    "median_machines": 6.0,
+    "median_logins_per_machine": 4.5,
+    "examples": [
+      "teakcherrynano.com",
+      "lilaccream-equity.io",
+      "orange.fr",
+      "harvestpepper.de",
+      "waveframe-equity.app",
+      "chimeforestwellness.co.uk"
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "base_count": 21,
+  "weight_change": {
+    "trials": 2000,
+    "average_kept": 20.18,
+    "worst_trial_kept": 15,
+    "share_of_trials_each_domain_stays": {
+      "kendovacationnetwork.com": 0.622,
+      "shogunworks-cad.com": 0.666,
+      "edoinns.com": 0.937,
+      "kendomeeting.com": 0.983,
+      "ginza-hotels.com": 0.986,
+      "okinawa.com": 0.995,
+      "samuraiwarriors.co.kr": 0.996,
+      "shopsamuraiwarriors.com": 0.999,
+      "samuraiwarriors.fr": 1.0,
+      "samuraiwarriors.de": 1.0,
+      "samuraiwarriorsrewards.com": 1.0,
+      "samuraiwarriorsfanclub.net": 1.0,
+      "kendocareers.com": 1.0,
+      "samuraiwarriorscircle.com": 1.0,
+      "samuraiwarriors.com.br": 1.0,
+      "samuraiwarriors-secure-login.com": 1.0,
+      "samuraiwarriorsinfo.com": 1.0,
+      "kendohotels.com": 1.0,
+      "samuraiwarriorscareers.com": 1.0,
+      "samurai.com": 1.0,
+      "samuraiwarriors.co.uk": 1.0
+    }
+  },
+  "drop_one_clue": {
+    "co-occurrence": {
+      "kept_of_base": 19,
+      "dropped": [
+        "ginza-hotels.com",
+        "shogunworks-cad.com"
+      ],
+      "added": [
+        "naganoresorts.com",
+        "parkwayhotels.com"
+      ]
+    },
+    "one login per machine": {
+      "kept_of_base": 13,
+      "dropped": [
+        "edoinns.com",
+        "ginza-hotels.com",
+        "kendocareers.com",
+        "kendomeeting.com",
+        "kendovacationnetwork.com",
+        "okinawa.com",
+        "samuraiwarriors-secure-login.com",
+        "shogunworks-cad.com"
+      ],
+      "added": [
+        "apple.com",
+        "epicgames.com",
+        "mega.nz",
+        "riotgames.com",
+        "roblox.com",
+        "spotify.com",
+        "steampowered.com",
+        "twitch.tv"
+      ]
+    },
+    "rare name words": {
+      "kept_of_base": 20,
+      "dropped": [
+        "kendovacationnetwork.com"
+      ],
+      "added": [
+        "branchvillage-advisory.com"
+      ]
+    },
+    "name meaning": {
+      "kept_of_base": 20,
+      "dropped": [
+        "samuraiwarriors.co.kr"
+      ],
+      "added": [
+        "parkwayhotels.com"
+      ]
+    }
+  },
+  "cutoff": {
+    "0.65": 42,
+    "0.7": 27,
+    "0.75": 21,
+    "0.8": 15,
+    "0.85": 11
+  }
+}

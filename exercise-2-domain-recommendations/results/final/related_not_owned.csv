@@ -1,0 +1,8 @@
+domain,machines,reason
+okta.com,79,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it
+myworkdayjobs.com,34,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it
+icims.com,26,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it
+taleo.net,21,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it
+zendesk.com,18,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it
+service-now.com,11,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it
+avature.net,9,third-party provider: a host under it carries the seed name (a tenant of the client). Shows the client uses it; the client does not own it

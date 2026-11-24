@@ -1,0 +1,37 @@
+{
+  "weights": {
+    "co_occurrence": 0.3,
+    "one_login_per_machine": 0.35,
+    "rare_name_words": 0.2,
+    "name_meaning": 0.15
+  },
+  "min_machines": 10,
+  "funnel": [
+    {
+      "stage": "candidates after filters 5a-5c",
+      "entering": 33117,
+      "removed": 0,
+      "kept": 33117
+    },
+    {
+      "stage": "6a third-party tenants (set aside: related, not owned)",
+      "entering": 33117,
+      "removed": 7,
+      "kept": 33110
+    },
+    {
+      "stage": "6b gate: seen on >= 10 machines",
+      "entering": 33110,
+      "removed": 32672,
+      "kept": 438
+    }
+  ],
+  "public_reference_n": 9,
+  "co_occurrence_full_credit_at_machines": 205,
+  "checks": {
+    "6a third-party tenants (set aside: related, not owned): kept + removed = entering": true,
+    "6b gate: seen on >= 10 machines: kept + removed = entering": true,
+    "every gated domain is scored": true,
+    "weights sum to 1": true
+  }
+}

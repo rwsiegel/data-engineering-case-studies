@@ -1,0 +1,14 @@
+flowchart LR
+  subgraph S[Sources of evidence, each dated]
+    A[Infected machine holds both domains<br/>first_seen, last_seen = exfiltration dates]
+    B[Shared certificate or registrant<br/>seen_on = date of the record]
+    C[Similar name<br/>computed on date]
+  end
+  D1[(Domain A<br/>client seed)] ---|edge| E{{Relationship record<br/>domain A, domain B, evidence type,<br/>strength, first_seen, last_seen, source}}
+  E --- D2[(Domain B<br/>candidate)]
+  A --> E
+  B --> E
+  C --> E
+  E --> R[Recommendation<br/>score, tier, as-of date]
+  R --> H[Decision history<br/>accepted, rejected, reason, who, when]
+  H -. feeds back as labels .-> E

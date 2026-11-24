@@ -1,0 +1,12 @@
+distinct fingerprints 36832
+duplicate sets 10747
+records 50037
+records in duplicate sets 23952
+sets of size 2 8644
+sets of size 3 1790
+sets of size 4 281
+sets of size 5 26
+sets of size 6 3
+sets of size 7 2
+sets of size 8 1
+singletons 26085
